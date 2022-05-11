@@ -41,9 +41,26 @@ body {
 }
 
 
-.container .carousel  .info  {
+.container .carousel .info {
   height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/** Agora vamos formatar o layout dos spans  */
+.container .carousel .item .info span {
+  display: block;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/** no span com a class .name */
+.container .carousel .item .info span .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #e81a5d;
 }
