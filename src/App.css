@@ -58,9 +58,25 @@ body {
 }
 
 /** no span com a class .name */
-.container .carousel .item .info span .name {
+.container .carousel .item .info span.name {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 0;
+  color: red;
+}
+
+ /** no span com a class .oldprice */
+.container .carousel .item .info span.oldPrice{ 
+  font-size: 0.8rem;
+  text-decoration: line-through;  
+  flex-grow: 1; 
   color: #e81a5d;
+}
+
+/** no span com a class .price */
+.container .carousel .item .info span.price{  
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #ff7e3b; 
 }
