@@ -38,7 +38,7 @@ From your command line:
 
 &nbsp;
 ## Go to repository
-### $ `cd colorCardsPage-react_js`
+### $ `cd simpleCarrocelPage-react_js`
 
 
 &nbsp;
