@@ -9,7 +9,41 @@ body {
   min-height: 100vh;
   background-color: #e1e1e1;
   color: #1e1e1e;
-  display: flex;                     
-  justify-content: center;         
-  align-items:center;               
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 75vw;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+
+.container .carousel .item {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 280px;
+  border-radius: 16px;
+}
+
+.container .carousel .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.container .carousel  .info  {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

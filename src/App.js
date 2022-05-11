@@ -10,16 +10,19 @@ function App() {
 
       <div className="carousel">
         <div className="item">
+          
           <div className="image">
             <img src="https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg" alt="Shoe" />
           </div>
-        </div>
-      </div>
 
-      <div className="info">
-        <span className="name">Super Shoe 1</span>
-        <span className="oldPrice">US$ 299,00</span>   
-        <span className="price">US$ 199,00</span>         
+          <div className="info">
+            <span className="name">Super Shoe 1</span>
+            <span className="oldPrice">US$ 299,00</span>
+            <span className="price">US$ 199,00</span>
+          </div>
+
+
+        </div>
       </div>
     </div>
   );
