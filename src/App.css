@@ -81,3 +81,19 @@ body {
   font-weight: bold;
   background-color: #ff7e3b; 
 }
+
+.container .buttons {
+  width: 100%;
+  text-align: center;
+}
+
+.container .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/** Vamos pegar o primeiro botão {{{first.child}}}  */
+.container .buttons button:first-child img {  
+  transform: rotate(180deg);      
+}
