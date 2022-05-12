@@ -7,8 +7,9 @@ Página simples de carrossel usando react_js, hooks e JSON para rodar imagens, t
 
 
 # Demo
-![caroucel page]()
-### $ `cole aqui a imagem do aplicativo`
+
+![caroucel page](https://user-images.githubusercontent.com/81040770/167989481-9493b12c-40b6-4304-b91a-623f7fe64da8.png)
+
 
 --------------------------------------------------------------------------------------
 
