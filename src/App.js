@@ -1,28 +1,49 @@
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/static/shoes.json')
+      .then((response) => response.json())
+      .then(setData);
+  }, []);
+
+  if (!data || !data.length) return null;
+
+
   return (
 
     <div className="container">
-        <div className="logo">
-              <img src="/static/images/super-shoes.png" alt="Super Shoes Logo" />
-        </div>
+      <div className="logo">
+        <img src="/static/images/super-shoes.png" alt="Super Shoes Logo" />
+      </div>
 
-        <div className="carousel">
-             <div className="item">
+      <div className="carousel">
 
-                 <div className="image">
-                       <img src="https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg" alt="Shoe" />
-                 </div>
+        {data.map((item) => {
+          const { id, name, price, oldPrice, image } = item;
+          return (
 
-                 <div className="info">
-                        <span className="name">Super Shoe 1</span>
-                        <span className="oldPrice">US$ 299,00</span>
-                        <span className="price">US$ 199,00</span>
-                 </div>
+            <div className="item" key={id}>
+
+              <div className="image">
+                <img src={image} alt={name} />
+              </div>
+
+              <div className="info">
+                <span className="name">{name}</span>
+                <span className="oldPrice">US$ {oldPrice} </span>
+                <span className="price">US$ {price} </span>
+              </div>
 
 
-        </div>
+            </div>
+          );
+        })}
+
       </div>
     </div>
   );
