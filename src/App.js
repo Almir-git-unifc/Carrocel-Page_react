@@ -43,8 +43,13 @@ function App() {
             </div>
           );
         })}
-
       </div>
+
+      <div className="buttons">
+        <button><img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Left" /></button>
+        <button><img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Right" /></button>
+      </div>
+
     </div>
   );
 }
