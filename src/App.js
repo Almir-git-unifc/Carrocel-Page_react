@@ -1,9 +1,10 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 function App() {
 
   const [data, setData] = useState([]);
+  const carousel = useRef(null);
 
   useEffect(() => {
     fetch('http://localhost:3000/static/shoes.json')
@@ -11,8 +12,22 @@ function App() {
       .then(setData);
   }, []);
 
-  if (!data || !data.length) return null;
 
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+    console.log(carousel.current.offsetWidth);
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
+/**  Está com erro de usabilidade. Ao chegar ao extremo da direita não retorna automaticamente ao inicio, e nem dá aviso ao usuário  */
+
+  const handleRightClick = (e) => {
+    e.preventDefault();
+    console.log(carousel.current.offsetWidth);
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  }
+/**  Está com erro de usabilidade. Ao chegar ao extremo da esquerda não retorna automaticamente ao inicio, e nem dá aviso ao usuário  */
+
+  if (!data || !data.length) return null;
 
   return (
 
@@ -21,7 +36,7 @@ function App() {
         <img src="/static/images/super-shoes.png" alt="Super Shoes Logo" />
       </div>
 
-      <div className="carousel">
+      <div className="carousel" ref={carousel}>
 
         {data.map((item) => {
           const { id, name, price, oldPrice, image } = item;
@@ -46,8 +61,12 @@ function App() {
       </div>
 
       <div className="buttons">
-        <button><img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Left" /></button>
-        <button><img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Right" /></button>
+        <button onClick={ handleLeftClick } >
+          <img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Left" />
+        </button>
+        <button onClick={ handleRightClick } >
+          <img src="/static/images/216151_right_chevron_icon.png" alt="Scroll Right" />
+        </button>
       </div>
 
     </div>
