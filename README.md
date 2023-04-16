@@ -34,12 +34,12 @@ From your command line:
 
 &nbsp;
 ## Clone this repository
-### $ `git clone https://github.com/Almir-git-unifc/simpleCarrocelPage-react_js.git`
+### $ `git clone https://github.com/Almir-git-unifc/Carrocel-Page_simple_react-js.git`
 
 
 &nbsp;
 ## Go to repository
-### $ `cd simpleCarrocelPage-react_js`
+### $ `cd Carrocel-Page_simple_react-js-main`
 
 
 &nbsp;
