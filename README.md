@@ -1,4 +1,4 @@
-# simplecolorCardsPage-react_js
+# simple color CardsPage in react_js
 
 Simple carousel page using react_js, hooks and JSON to rotate images, text and values
 Página simples de carrossel usando react_js, hooks e JSON para rodar imagens, textos e valores
