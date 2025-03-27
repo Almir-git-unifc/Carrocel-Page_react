@@ -27,20 +27,30 @@ Single page application, which uses cards with border-color and the inheritance
 Simple carousel page using react_js, hooks and JSON to rotate images, text and values.
 
 This project was developed previously for Emerson Broga, found on youtube with the title """Carrossel com React"""
+Future improvements: The carousel still needs to return to the beginning or provide feedback to the user when it reaches the extremes.
 
 
 
 # Feature <a name = "Feature"></a>
-- layout responsive
-- carousel of images
+- Horizontal product carousel.
+- Display of detailed product information.
+- Navigation of the carousel of images with control buttons.
+- Fetching of product data from a local JSON file.
+- Dynamic rendering of products.
+- Direct DOM manipulation for carousel scrolling.
 
 
 
 &nbsp;
 # Technologies <a name = "Technologies"></a>
-In youtube's video this project was developed with javascript language using technology: React_JS
+This project was developed using technologys:
+- React.js: For building the user interface.
+- JavaScript (ES6+): For application logic.
+- Fetch API: For fetching data from a local JSON file.
+- React Hooks (useRef, useEffect): For DOM manipulation.
 
-However, in my devepoment used: Msg-linter and comitzen for semantic version and Convencional Commits; beyond the VS_Code with snippets.
+However, in my devepoment used too: Msg-linter and comitzen for semantic version and Convencional Commits; beyond the VS_Code with snippets.
+
 
 ### Built With 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
